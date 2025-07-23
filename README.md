@@ -1,49 +1,53 @@
 # flask-minimal
 
-A minimal Flask starter project designed to help you quickly set up a clean, simple, and efficient web application. This project is structured to keep things lightweight and focuses on productivity, with all your code contained in a single file (`app.py`), along with basic templates and static assets.
+Proyek starter Flask minimal yang dirancang untuk membantu Anda menyiapkan aplikasi web yang bersih, sederhana, dan efisien dengan cepat. Proyek ini disusun agar tetap ringan dan fokus pada produktivitas, dengan semua kode Anda terkandung dalam satu file (app.py), bersama dengan template dasar dan aset statis.
 
 
-## Features
-- Single-file Flask application (`app.py`) to maximize productivity and simplicity.
-- Basic HTML template structure with minimal styling and JavaScript.
-- Simple and intuitive project setup with no unnecessary complexity.
-- Easily customizable for rapid development of web applications.
+## Fitur
+-Aplikasi Flask dalam satu file (app.py) untuk memaksimalkan produktivitas dan kesederhanaan.
+-Struktur template HTML dasar dengan styling dan JavaScript minimal.
+-Pengaturan proyek yang sederhana dan intuitif tanpa kompleksitas yang tidak perlu.
+-Mudah disesuaikan untuk pengembangan aplikasi web yang cepat.
 
-## Preparation
+
+## Persiapan
 ```bash
 sudo apt update
 sudo apt install python3 python3-venv python3-pip -y
 ```
 
-## Installation
+## Instalasi
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/flask-minimal.git
-   cd flask-minimal
-   ```
+1. Clone repository:
+```bash
+git clone https://github.com/yourusername/flask-minimal.git
+cd flask-minimal
+```
 
-2. Create a virtual environment (recommended):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+2. Buat virtual environment (disarankan):
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. Install dependensi yang diperlukan:
+```bash
+pip install -r requirements.txt
+```
 
-4. Run the app:
-   ```bash
-   python app.py
-   ```
+4. Jalankan aplikasi:
+```bash
+python app.py
+```
 
-The Flask app will start, and you can view it by navigating to http://localhost:5000 in your browser.
+   
 
-##TAMBAHAN
+Aplikasi Flask akan mulai berjalan, dan Anda dapat melihatnya dengan membuka http://localhost:5000 di browser Anda.
 
-Agar Flask-app otomatis berjalan setiap kali EC2 instance dinyalakan kita bisa menggunakan systemd, caranya :
+
+## Tambahan
+
+Supaya Flask-app otomatis berjalan saat EC2 instance dinyalakan kita bisa menggunakan systemd, caranya :
 1. Buat file service untuk systemd
 
 ```bash
@@ -97,23 +101,9 @@ You can easily modify:
 
 Jangan ragu untuk memperbarui file app.py untuk menambahkan rute atau logika tambahan sesuai kebutuhan Anda.
 
-## Usage
+## Lisensi
+Proyek ini dilisensikan di bawah Lisensi MIT.
 
-This starter project is ready to be used as a foundation for building web applications. The app.py file contains all the Flask routes and logic, making it simple to expand and customize. You can add more templates, routes, or static files as needed.
-
-## Customization
-You can easily modify:
-
- - The HTML structure in `templates/index.html`
- - The styling in `static/style.css`
- - The interactivity in `static/script.js`
-
-Feel free to update the app.py file to add your routes or any additional logic to fit your needs.
-
-## License
-This project is licensed under the MIT License.
-
-## Contributing
-Feel free to fork this repository and create pull requests if you have improvements or bug fixes. If you have any suggestions, open an issue, and we’ll discuss it!
-
-This project is built with simplicity and efficiency in mind, perfect for quickly starting small web apps or prototypes with minimal overhead.
+## Kontribusi
+Jangan ragu untuk melakukan fork repository ini dan membuat pull request jika Anda memiliki perbaikan atau perbaikan bug. Jika Anda memiliki saran, buka issue, dan kita akan membahasnya!
+Proyek ini dibangun dengan mempertimbangkan kesederhanaan dan efisiensi, sempurna untuk memulai aplikasi web kecil atau prototipe dengan overhead minimal.
